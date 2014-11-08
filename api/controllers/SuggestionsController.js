@@ -6,18 +6,6 @@
  */
 
 module.exports = {
-
-    suggestion: {
-      type: 'STRING'
-    },
-
-    details: {
-      type: 'STRING'
-    },
-
-    votes: {
-      type: 'INTEGER'
-    }
 	
 };
 

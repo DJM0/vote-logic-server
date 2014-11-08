@@ -9,6 +9,19 @@ module.exports = {
 
   attributes: {
 
+    suggestion: {
+      type: 'STRING'
+    },
+
+    details: {
+      type: 'STRING'
+    },
+
+    votes: {
+      type: 'INTEGER'
+    }
+
   }
+
 };
 
