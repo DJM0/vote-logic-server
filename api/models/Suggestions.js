@@ -13,7 +13,7 @@ module.exports = {
       type: 'STRING'
     },
 
-    details: {
+    description: {
       type: 'STRING'
     },
 
