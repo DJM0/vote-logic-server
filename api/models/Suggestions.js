@@ -19,6 +19,10 @@ module.exports = {
 
     votes: {
       type: 'INTEGER'
+    },
+
+    authorEmail: {
+      type: 'STRING'
     }
 
   }
