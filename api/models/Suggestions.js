@@ -10,11 +10,15 @@ module.exports = {
   attributes: {
 
     suggestion: {
-      type: 'STRING'
+      type: 'STRING',
+      required: true,
+      minLength: 5
     },
 
     description: {
-      type: 'STRING'
+      type: 'STRING',
+      required: true,
+      minLength: 5
     },
 
     votes: {
@@ -22,7 +26,9 @@ module.exports = {
     },
 
     authorEmail: {
-      type: 'STRING'
+      type: 'STRING',
+      required: true,
+      minLength: 10
     }
 
   }
