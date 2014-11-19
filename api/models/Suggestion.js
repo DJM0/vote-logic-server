@@ -21,14 +21,15 @@ module.exports = {
       minLength: 5
     },
 
-    votes: {
-      type: 'INTEGER'
-    },
-
     authorEmail: {
       type: 'STRING',
       required: true,
       minLength: 10
+    },
+
+    votes: {
+      collection: 'vote',
+      via: 'suggestion'
     }
 
   }
