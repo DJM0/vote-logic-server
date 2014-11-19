@@ -25,6 +25,10 @@
 
 module.exports.blueprints = {
 
+  ember: {
+    sideload: true
+  },
+
   /***************************************************************************
   *                                                                          *
   * Action routes speed up the backend development workflow by               *
