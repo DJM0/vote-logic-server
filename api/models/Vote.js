@@ -9,6 +9,21 @@ module.exports = {
 
   attributes: {
 
+    suggestion: {
+      model: 'suggestion',
+    },
+
+    votes: {
+      type: 'integer',
+      defaultsTo: 0
+    },
+
+    email: {
+      type: 'string',
+      required: true,
+      minLength: 10
+    }
+
   }
 };
 

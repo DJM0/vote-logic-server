@@ -10,19 +10,19 @@ module.exports = {
   attributes: {
 
     suggestion: {
-      type: 'STRING',
+      type: 'string',
       required: true,
       minLength: 5
     },
 
     description: {
-      type: 'STRING',
+      type: 'string',
       required: true,
       minLength: 5
     },
 
     authorEmail: {
-      type: 'STRING',
+      type: 'string',
       required: true,
       minLength: 10
     },
