@@ -27,14 +27,10 @@ module.exports = {
       minLength: 10
     },
 
-    total: function() {
-      return 10;
-    },
-
     votes: {
       collection: 'vote',
       via: 'suggestion'
-    }
+    },
 
   }
 
