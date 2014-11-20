@@ -18,10 +18,12 @@ module.exports = {
       defaultsTo: 0
     },
 
+    comments: {
+      type: 'string'
+    },
+
     email: {
-      type: 'string',
-      required: true,
-      minLength: 10
+      type: 'string'
     }
 
   }

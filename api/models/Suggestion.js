@@ -21,10 +21,9 @@ module.exports = {
       minLength: 5
     },
 
-    authorEmail: {
+    email: {
       type: 'string',
-      required: true,
-      minLength: 10
+      required: false
     },
 
     votes: {
