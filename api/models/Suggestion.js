@@ -31,6 +31,12 @@ module.exports = {
       via: 'suggestion'
     },
 
+    toJSON: function() {
+      var obj = this.toObject();
+      obj.total = 23;
+      return obj;
+    }
+
   }
 
 };

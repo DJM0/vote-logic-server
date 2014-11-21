@@ -15,10 +15,12 @@ module.exports = {
 
     votes: {
       type: 'integer',
-      defaultsTo: 0
+      defaultsTo: 0,
+      min: 0,
+      max: 3
     },
 
-    comments: {
+    note: {
       type: 'string'
     },
 
