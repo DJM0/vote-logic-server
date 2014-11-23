@@ -26,7 +26,7 @@
 module.exports.blueprints = {
 
   ember: {
-    sideload: true
+    sideload: false
   },
 
   /***************************************************************************
