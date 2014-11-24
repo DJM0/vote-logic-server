@@ -27,40 +27,12 @@ module.exports = {
     },
 
     votes: {
-      collection: 'vote',
-      via: 'suggestion'
-    },
-
-    total: {
       type: 'integer'
     },
 
-    toJSON: function() {
-
-      var obj = this.toObject();
-
-      Vote.find({ suggestion: obj.id }).exec(function(error, votes) {
-
-        var total = 0;
-
-        for (i in votes) {
-          total += votes[i].votes;
-        }
-
-        Suggestion.findOne({ id: obj.id }).exec(function(error, suggestion){
-
-          suggestion.total = total;
-
-          suggestion.save(function(error) {
-            //console.log(error);
-          });
-
-        });
-
-      });
-
-      return obj;
-
+    notes: {
+      collection: 'note',
+      via: 'suggestion'
     }
 
   }

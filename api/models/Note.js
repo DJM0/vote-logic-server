@@ -13,13 +13,6 @@ module.exports = {
       model: 'suggestion',
     },
 
-    votes: {
-      type: 'integer',
-      defaultsTo: 0,
-      min: 0,
-      max: 3
-    },
-
     note: {
       type: 'string'
     },
