@@ -26,8 +26,14 @@ module.exports = {
       required: false
     },
 
+    total: {
+      type: 'integer',
+      defaultsTo: 0
+    },
+
     votes: {
-      type: 'integer'
+      collection: 'vote',
+      via: 'suggestion'
     },
 
     notes: {
