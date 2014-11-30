@@ -26,11 +26,6 @@ module.exports = {
       required: false
     },
 
-    total: {
-      type: 'integer',
-      defaultsTo: 0
-    },
-
     votes: {
       collection: 'vote',
       via: 'suggestion'
@@ -39,6 +34,24 @@ module.exports = {
     notes: {
       collection: 'note',
       via: 'suggestion'
+    },
+
+    getTotal: function() {
+
+      var votes = this.votes;
+      var total = 0;
+
+      for (i in votes) {
+        total += votes[i].votes;
+      }
+
+      return total;
+    },
+
+    toJSON: function() {
+      var obj = this.toObject();
+      obj.total = obj.getTotal();
+      return obj;
     }
 
   }
