@@ -36,6 +36,11 @@ module.exports = {
       via: 'suggestion'
     },
 
+    tags: {
+      collection: 'tag',
+      via: 'suggestions'
+    },
+
     getTotal: function() {
 
       var votes = this.votes;
