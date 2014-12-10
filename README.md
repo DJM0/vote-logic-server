@@ -1,5 +1,7 @@
 # Vote Logic Server
 
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/davidmaitland/vote-logic?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 Vote Logic is a realtime feature/suggestion voting platform for projects, companies and organisations.
 
 This project is the backend API to the counterpart frontend project [vote-logic](https://github.com/davidmaitland/vote-logic).
