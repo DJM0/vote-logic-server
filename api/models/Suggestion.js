@@ -55,7 +55,13 @@ module.exports = {
 
     toJSON: function() {
       var obj = this.toObject();
-      obj.total = obj.getTotal();
+
+      try {
+        obj.total = obj.getTotal();
+      } catch(e) {
+        obj.total = 0;
+      }
+
       return obj;
     }
 
