@@ -15,7 +15,9 @@ module.exports = {
 
     votes: {
       type: 'integer',
-      defaultsTo: 0
+      min: 1,
+      max: 3,
+      defaultsTo: 1
     },
 
     ip: {
